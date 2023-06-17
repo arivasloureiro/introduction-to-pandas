@@ -1,0 +1,13 @@
+lxml
+black
+html5lib
+
+# Clientes para bases de datos
+PyMySQL
+sqlalchemy
+psycopg2-binary
+
+# Extensiones para JupyterLab
+jupyterlab-recents
+jupyterlab_execute_time
+jupyterlab_code_formatter

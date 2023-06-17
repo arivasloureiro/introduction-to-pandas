@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  notebook:
+    build: .
+    volumes:
+      - ./home/work:/home/jovyan/work:rw
+      - ./home/workspaces:/home/jovyan/.jupyter/lab/workspaces:rw
+      - ./home/jupyter_user_settings:/home/jovyan/.jupyter/lab/user-settings:rw
+    ports:
+      - 8888:8888
+    command: start-notebook.sh --LabApp.token=''
+  database:
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: passwd
+      POSTGRES_DB: pandas-db
+    ports:
+      - "5432:5432"

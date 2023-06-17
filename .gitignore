@@ -1,0 +1,6 @@
+.vscode
+.idea
+home/work/*
+!home/work/*.ipynb
+home/workspaces/*
+home/jupyter_user_settings/*

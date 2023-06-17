@@ -1,0 +1,5 @@
+# Aquí podemos indicar los módulos de Ipython
+# que queremos cargar al iniciar el kernel de Python
+
+# Carga Ipympl como backend para Matplotlib
+# %matplotlib widget
